@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-  <script src='https://cdn.pydata.org/bokeh/release/bokeh-1.0.2.min.js'></script>
-  <link rel='stylesheet' type ='text/css' href='https://cdn.pydata.org/bokeh/release/bokeh-1.0.2.min.css' />
-  
-  {{ script | safe }}
-</head>
- <body>
-  <div class=page>
-   {{ div | safe }}
-  </div>
- </body>
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Scatter Plots</title>
+        {{ resources }}
+        {{ script }}
+        <style>
+            .embed-wrapper {
+                display: flex;
+                justify-content: space-evenly;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="embed-wrapper">
+         {{ div | safe }}
+        </div>
+    </body>
 </html>
